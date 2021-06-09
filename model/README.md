@@ -8,6 +8,8 @@ spawning detection project](http://stage-coral-spawning.srv.axds.co/).
 
 The model is an off the shelf ResNet34 implemented in [fastai](https://www.fast.ai/).
 
+It is available as a [Docker image](https://hub.docker.com/repository/docker/axiom/coral-spawning-detector).
+
 ### Model training
 
 The model was trained using video of four different coral spawning in aquaria provided by the Florida Aquarium.
@@ -25,7 +27,7 @@ Docker.
 Once the model has been built, it can be ran using Docker commands such as:
 
 ```bash
-docker run -p 5000:5000 coral-model:latest
+docker run -p 5000:5000 axiom/coral-spawning-detector:latest
 ```
 
 To use the running coral spawning detector, you can POST an image to the service and it returns "positive":
