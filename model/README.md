@@ -16,7 +16,7 @@ The model was trained using video of four different coral spawning in aquaria pr
 The videos were split into individual frames, then manually divided into directories of non-spawning images ("negative") and
 spawning images ("positive").
 
-These images were then used to train the last, dense layer of a ResNet34 model using the notebook `train-model.ipynb`.
+These images were then used to train the last, dense layer of a ResNet34 model using the script `train-model.py`.
 Note that the notebook is not directly runnable and reproducible because the training data is not publically available.
 
 ### Model Deployment
